@@ -1,0 +1,32 @@
+{
+    "presets": [
+        [
+            "@babel/env",
+            {
+                "modules": false,
+                "useBuiltIns": "usage",
+                "corejs": "3" // 新增
+            }
+        ],
+        "@babel/preset-react",
+        "@babel/preset-typescript"
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-transform-runtime",
+            {
+                "corejs": 3,
+                "proposals": true,
+                "helpers": true
+            }
+        ],
+        [
+            "import",
+            {
+                "libraryName": "antd",
+                "style": true
+            }
+        ],
+        "@babel/plugin-proposal-class-properties"
+    ]
+}
