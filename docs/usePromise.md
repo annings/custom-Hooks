@@ -6,7 +6,7 @@ Promises wrapped with this function will resolve only when component is mounted.
 ## Usage
 
 ```jsx
-import { usePromise } from 'dh-hooks';
+import { usePromise } from 'ancustom_hooks';
 
 const Demo = ({ promise }) => {
     const mounted = usePromise();
